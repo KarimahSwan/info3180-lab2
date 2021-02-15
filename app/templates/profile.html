@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Profile</h1>
+<div class="page">
+    <div class="bio">
+        <img src="{{url_for('static', filename='lab2.jpg')}}"/>
+        <h2>Karimah Swan</h2> 
+        <p>@karimahswann</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{datejoined}}</p>
+    </div>
+    <div class="info">
+        <p>I am a smart and talented young woman who loves
+            website design and development. Contact me if you'd
+            like to work together on a new project.
+        </p>
+
+        <div class="followers">
+            <p class="num">7</p>
+            <p class="num">100</p>
+            <p class="num">250</p>
+            <p class="text">Posts</p>
+            <p class="text">Following</p> 
+            <p class="text">Followers</p>
+        </div>
+
+        <div class="button">
+            <button class="followbtn">Follow</button>
+        </div>
+    </div>
+    
+    
+</div>
+
+{% endblock %}
